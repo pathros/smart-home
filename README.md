@@ -8,7 +8,10 @@ Final project for the [Building AI][1] course.
 Deploy a domotics system to automatically and/or remotely control water supply, windows opening and closing, turning on/off the lights, garden watering, and more.
 
 
-The scope comprises development and deployment on a VPS server.
+Since I am barely starting this project, I only will focus on the "windows opening and closing control" part.
+
+
+For future work, this project will comprise development and deployment on a VPS server.
 
 
 ## Background
@@ -29,7 +32,7 @@ The problems to take into account to optimize the home maintenance are:
 * Weather conditions
 * Defined raining season
 * Garbage collection
-* Water supply
+* Water supply, including sporadic cut off
 * Sporadic electricity cut off
 * Dog feeding
 * Gas cut off
@@ -43,35 +46,42 @@ It's very expensive for me to spend lots of time in home maintenance. Finding th
 
 
 
-### Weather conditions
+### windows opening and closing control
 
-Weather conditions usually consist of strong winds.
+By using a model, I want a system to determine when to close and open the house Windows by meeting our following criteria:
+* All windows must be closed when:
+  * It's night.
+  * It's very windy.
+  * It's raining hard.
+  * It's dusty.
+  * There's smog.
+* All windows must be open when:
+  * It's daylight.
+  * There's no wind or wind is not strong.
+  * There's no dust.
+  * There's no smog.
 
+## Data and AI techniques
 
-### Defined raining season
+The data will come from the [rain][2], wind, smog, temperature & humidity sensors. These data together will be used to generate a ,tentatively a linear or logistic regression, two-class (label) model: "close" and "open".
 
+### Data sources
+Data will come from the sensors. Historical data will be stored in a database that will be applied to models.
 
-### Garbage collection
-
-
-### Water supply
-
-
-### Sporadic electricity cut off
-
-No break batteries only last about three hours. If the cut off has already taken at least 20 minutes, the system should send a report with all the required details to the Electricity Company.
-
-
-As for maintenance, with the use of 
-in optimizing water and electricity use.
-
-
-
-
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+* Rain intensity. Values can be grouped into the following labels [according to this arduino rain sensor project][3]:
+  * High
+  * Medium
+  * Low
+* Wind strength. Values can be grouped into the following labels [according to this arduino anemometer project][4]:
+  * Calm
+  * Light air
+  * Light Breeze
+  * Gentle Breeze
+  * Moderate breeze
+  * Fresh breeze
+  * Strong breeze ... and up. 
+* Air quality (SGP30 Sensor: https://www.youtube.com/watch?v=lpBCYy5J5to)
+* Humidity and temperature sensor.
 
 
 ## How is it used?
@@ -122,6 +132,32 @@ What does your project _not_ solve? Which limitations and ethical considerations
 
 How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
 
+### Future work
+
+#### Weather conditions
+
+Weather conditions usually consist of strong winds.
+
+
+#### Defined raining season
+
+Raining season in my area is quite defined. It usually starts from May until September.
+
+
+#### Garbage collection
+
+The bin lorry doesn't have a defined schedule to come.
+
+
+#### Water supply
+
+Sporadic cut offs happen, due to other people who don't pay their bills on time.
+
+#### Sporadic electricity cut off
+
+Due to weather conditions and corrupt private enterprises, electricity cut offs happen from time to time. No-break batteries only last about three hours. If the cut off has already taken at least 20 minutes, the system should send a report with all the required details to the Electricity Company.
+
+
 
 ## Acknowledgments
 
@@ -134,7 +170,10 @@ How could your project grow and become something even more? What kind of skills,
 * do not use code, images, data etc. from others without permission
 * when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
   <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* Sensors
+  * [2]:  https://www.amazon.com.mx/dp/B07TRMKVRD/?target=_blank "Sensor de gotas de lluvia de 12 V, Interruptor de relé del sensor de humedad de la hoja foliar del módulo del controlador de gotas de lluvia"
+  * [3]: https://mytectutor.com/rain-sensor-with-arduino-for-making-automatic-car-windshield-wiper/?target=_blank "Arduino rain sensor"
+  * [4]: http://www.n8mdp.com/wxanemometer_windvane.php?target=_blank "Arduino Anemometer / Wind Vane"
 
 
 
