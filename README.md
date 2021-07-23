@@ -85,57 +85,27 @@ And the column that determines to open or close the windows is (as a label "open
 * Windows
 
 
-## How is it used?
+## AI methods
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+According to my tests, the possible best methods are:
+* Naïve Bayes
+* Support Vector Machine
+* K-nearest neighbors
+* Decision trees
 
-This is an automated solution that requires to be implemented in the House. This will help keep the house clean and prevent water to get inside from raining time. Users will no longer to cater about opening and closing the windows themselves.
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
-
-
-## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+* Implementation of the hardware by using either Arduino or Raspberry.
+* Data transfer between the hardware and the software (database and AI methods)
 
-## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+### Future work and what next?
 
-### Future work
+Skills to move on:
+
+* Arduino or raspberry programming
+* Data exchange with the computer software (database, python, AI methods, Internet, Server deployment)
 
 #### Weather conditions
 
