@@ -48,6 +48,8 @@ It's very expensive for me to spend lots of time in home maintenance. Finding th
 
 ### windows opening and closing control
 
+**At the moment and for the sake of simplicity, I narrow down this project to *windows opening and closing control* **
+
 By using a model, I want a system to determine when to close and open the house Windows by meeting our following criteria:
 * All windows must be closed when:
   * It's night.
@@ -63,30 +65,31 @@ By using a model, I want a system to determine when to close and open the house 
 
 ## Data and AI techniques
 
-The data will come from the [rain][2], wind, smog, temperature & humidity sensors. These data together will be used to generate a ,tentatively a linear or logistic regression, two-class (label) model: "close" and "open".
+The data will come from the [rain][2], wind, smog, temperature & humidity sensors. These data together will be used to generate a, tentatively a linear or logistic regression, two-class (label) model: "close" and "open".
+
+
+
 
 ### Data sources
 Data will come from the sensors. Historical data will be stored in a database that will be applied to models.
 
-* Rain intensity. Values can be grouped into the following labels [according to this arduino rain sensor project][3]:
-  * High
-  * Medium
-  * Low
-* Wind strength. Values can be grouped into the following labels [according to this arduino anemometer project][4]:
-  * Calm
-  * Light air
-  * Light Breeze
-  * Gentle Breeze
-  * Moderate breeze
-  * Fresh breeze
-  * Strong breeze ... and up. 
-* Air quality (SGP30 Sensor: https://www.youtube.com/watch?v=lpBCYy5J5to)
-* Humidity and temperature sensor.
+**Sample Columns** are (all as float type):
+* precipitation
+* temperature
+* humidity
+* visibility
+* wind
+* pressure
+
+And the column that determines to open or close the windows is (as a label "open", "close" two-class type):
+* Windows
 
 
 ## How is it used?
 
 Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+
+This is an automated solution that requires to be implemented in the House. This will help keep the house clean and prevent water to get inside from raining time. Users will no longer to cater about opening and closing the windows themselves.
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
