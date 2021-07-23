@@ -73,6 +73,10 @@ The data will come from the [rain][2], wind, smog, temperature & humidity sensor
 ### Data sources
 Data will come from the sensors. Historical data will be stored in a database that will be applied to models.
 
+I added the "weather_sample.csv" sample file to give a general idea how the input would be collected from different sensors to apply AI methods on, in order to determine whether the windows should be open or closed.
+
+I also added my Jupiter Notebook with Python to test it with different AI methods.
+
 **Sample Columns** are (all as float type):
 * precipitation
 * temperature
@@ -140,6 +144,7 @@ Due to weather conditions and corrupt private enterprises, electricity cut offs 
   * [Dillinger: online markdown](https://dillinger.io/)
   * [Source forge markdown syntax](https://sourceforge.net/nf/markdown_syntax)
   * [Markdown create links with target blank](https://stackoverflow.com/a/43710183/1883256)
+  * [Algoritmos de clasificación en python - Iris Dataset](https://www.youtube.com/watch?v=W_oZdchsWgI)
 * do not use code, images, data etc. from others without permission
 * when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
   <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
