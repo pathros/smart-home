@@ -145,9 +145,9 @@ Due to weather conditions and corrupt private enterprises, electricity cut offs 
   * [Markdown create links with target blank](https://stackoverflow.com/a/43710183/1883256)
   * [Algoritmos de clasificación en python - Iris Dataset](https://www.youtube.com/watch?v=W_oZdchsWgI)
 * Sensors
-  * [2]:  https://www.amazon.com.mx/dp/B07TRMKVRD/?target=_blank "Sensor de gotas de lluvia de 12 V, Interruptor de relé del sensor de humedad de la hoja foliar del módulo del controlador de gotas de lluvia"
-  * [3]: https://mytectutor.com/rain-sensor-with-arduino-for-making-automatic-car-windshield-wiper/?target=_blank "Arduino rain sensor"
-  * [4]: http://www.n8mdp.com/wxanemometer_windvane.php?target=_blank "Arduino Anemometer / Wind Vane"
+[2]:  https://www.amazon.com.mx/dp/B07TRMKVRD/?target=_blank "Sensor de gotas de lluvia de 12 V, Interruptor de relé del sensor de humedad de la hoja foliar del módulo del controlador de gotas de lluvia"
+[3]: https://mytectutor.com/rain-sensor-with-arduino-for-making-automatic-car-windshield-wiper/?target=_blank "Arduino rain sensor"
+[4]: http://www.n8mdp.com/wxanemometer_windvane.php?target=_blank "Arduino Anemometer / Wind Vane"
 
 
 
