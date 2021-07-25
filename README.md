@@ -138,16 +138,12 @@ Due to weather conditions and corrupt private enterprises, electricity cut offs 
 
 ## Acknowledgments
 
-* list here the sources of inspiration
 * References
   * [What is domotics?](http://www.easydom.com/en/discover/what-is-domotics)
   * [Dillinger: online markdown](https://dillinger.io/)
   * [Source forge markdown syntax](https://sourceforge.net/nf/markdown_syntax)
   * [Markdown create links with target blank](https://stackoverflow.com/a/43710183/1883256)
   * [Algoritmos de clasificación en python - Iris Dataset](https://www.youtube.com/watch?v=W_oZdchsWgI)
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
 * Sensors
   * [2]:  https://www.amazon.com.mx/dp/B07TRMKVRD/?target=_blank "Sensor de gotas de lluvia de 12 V, Interruptor de relé del sensor de humedad de la hoja foliar del módulo del controlador de gotas de lluvia"
   * [3]: https://mytectutor.com/rain-sensor-with-arduino-for-making-automatic-car-windshield-wiper/?target=_blank "Arduino rain sensor"
